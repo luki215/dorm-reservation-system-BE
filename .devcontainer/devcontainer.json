@@ -1,0 +1,9 @@
+{
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "api",
+    "workspaceFolder": "/dorm-be",
+    "shutdownAction": "stopCompose",	
+    "extensions": [
+		"ms-python.python"
+	]
+}

@@ -1,0 +1,5 @@
+database
+env_files/*.env
+!env_files/*.sample.env
+.DS_Store
+*.pyc
