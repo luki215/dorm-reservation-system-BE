@@ -10,7 +10,7 @@ services:
   
   #database 
   db:
-    image: postgres
+    image: postgres:alpine
     ports:
       - '3305:5432'
     volumes:
@@ -33,6 +33,9 @@ services:
     env_file:
       - './env_files/db.env'
       - './env_files/api.env'
+
+    environment:
+      VIRTUAL_HOST: "api.dorms.localhost"
     volumes:
       - './:/dorm-be/'
     links:
